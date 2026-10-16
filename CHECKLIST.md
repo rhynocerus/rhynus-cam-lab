@@ -1,38 +1,31 @@
-# RHYNUS CAM LAB — Checklist
+# RHYNUS CAM LAB — Checklist de lanzamiento v0.1.1
 
-Marcar `[x]` solo después de comprobar el resultado. Fecha de actualización: 2026-10-16.
+**Cierre:** 2026-10-16. **Estado:** completado. **Proyecto:** RHYNUS CAM LAB - v0.1.1 - RIW.
 
-## Preparado
-- [x] Definir idea y nombre RHYNUS CAM LAB.
-- [x] Preparar archivos iniciales HTML, CSS y JavaScript para v0.1.
-- [x] Preparar paquete ZIP de prototipo.
-- [x] Definir hoja de ruta y checklist iniciales.
+## Diseño, implementación y pruebas locales
+- [x] Crear prototipo HTML, CSS y JavaScript.
+- [x] Activar cámara con consentimiento y procesar movimiento localmente.
+- [x] Incorporar la identidad institucional RIW y el marco Cyber HUD.
+- [x] Validar cámara, máscara, botón y medidor.
+- [x] Superar checklist visual/local (8/8).
 
-## Objetivo activo: probar v0.1 en Linux Mint
-- [ ] Descargar/descomprimir proyecto en `~/Proyectos/rhynus-cam-lab`.
-- [ ] Iniciar servidor local con `python3 -m http.server 8000`.
-- [ ] Abrir `http://localhost:8000` y conceder acceso a la cámara.
-- [ ] Confirmar vídeo en vivo.
-- [ ] Confirmar detección de movimiento y aparición del efecto.
-- [ ] Ajustar sensibilidad si hace falta y anotar observaciones.
-- [ ] Cerrar fase 0: prueba satisfactoria o incidencia documentada.
+## Código, documentación y distribución
+- [x] Preparar respaldo local e inicializar Git.
+- [x] Publicar repositorio `rhynocerus/rhynus-cam-lab` en GitHub.
+- [x] Incorporar GPL v3 (LICENSE), TRADEMARKS.md y CONTRIBUTING.md.
+- [x] Crear Space estático público `rhynus/rhynus-cam-lab`.
+- [x] Subir archivos mediante CLI oficial de Hugging Face.
+- [x] Probar la demo pública en escritorio.
+- [x] Superar checklist móvil (6/6): diseño adaptable, logo completo, activación y detención de cámara, medidor, botón de máscara y controles táctiles.
+- [x] Registrar cierre de la v0.1.1.
 
-## Próxima fase: publicar v0.1 (NO iniciar aún)
-- [ ] Revisar derechos/licencias de cada recurso.
-- [ ] Inicializar Git; primer commit.
-- [ ] Crear repositorio GitHub.
-- [ ] Push y revisión de cambios.
-- [ ] Crear Space estático en Hugging Face y enlazar/desplegar archivos.
-- [ ] Comprobar demo publicada, permisos y móvil.
-- [ ] Documentar URL y cerrar versión v0.1.
+## Backlog: NO forma parte de este cierre
+- [ ] v0.2: seguimiento de rostro, ojos y boca en navegador.
+- [ ] v0.2: detección orientativa de sonrisa y máscara ligada a expresión.
+- [ ] v0.3: avatar de rinoceronte 3D y optimización.
 
-## Futuro (NO iniciar aún)
-- [ ] v0.2: seguimiento facial y sonrisa.
-- [ ] v0.2: máscara de rinoceronte que siga el rostro.
-- [ ] v0.3: avatar 3D propio, optimizado.
-- [ ] v1.0: capturas opcionales, privacidad y publicación estable.
+## Enlaces de referencia
+- GitHub: https://github.com/rhynocerus/rhynus-cam-lab
+- Hugging Face: https://huggingface.co/spaces/rhynus/rhynus-cam-lab
 
-## Registro de pruebas
-| Fecha | Entorno | Resultado | Incidencias |
-|---|---|---|---|
-| Pendiente | Linux Mint / Firefox | No probado | — |
+**Validaciones:** resultados comunicados por quien realizó las pruebas el 16 de octubre de 2026. Las funcionalidades futuras no se consideran implementadas.
