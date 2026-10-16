@@ -5,47 +5,76 @@ colorFrom: blue
 colorTo: gray
 sdk: static
 app_file: index.html
+license: gpl-3.0
 pinned: false
-short_description: Experimento de cámara, detección de movimiento y máscara de rinoceronte local.
+short_description: Laboratorio de cámara, detección de movimiento y máscara de rinoceronte con procesamiento local.
 ---
 
 # RHYNUS CAM LAB 🦏
+**RHYNUS Interactive Works (RIW) · v0.1.1 · Rhynus Mode**
 
-Demo gratuita de cámara web para Hugging Face Spaces (Static HTML).
+Experimento web de visión artificial con cámara, detección de movimiento y máscara gráfica de rinoceronte. Creado con HTML, CSS y JavaScript, sin servicios de pago ni procesamiento remoto de vídeo.
 
-## Versión 0.1
-- Cámara bajo consentimiento explícito.
-- Detección de cambios de imagen (movimiento) mediante Canvas 2D.
-- Máscara gráfica original de rinoceronte que se activa con movimiento.
-- Umbral ajustable y estado de detección.
-- Procesamiento íntegramente local en el navegador: sin subir imágenes a servidores.
+## Funciones de la versión 0.1.1
 
-**Importante:** no reconoce rostros ni sonrisas todavía. La máscara se dibuja en una posición fija, como efecto experimental, no sigue la cara.
+- Activación y detención voluntarias de la cámara con permiso del navegador.
+- Detección de movimiento por comparación de fotogramas con Canvas 2D; sensibilidad ajustable y medidor visual.
+- Máscara 2D experimental de rinoceronte, con persistencia temporal y botón para mostrarla.
+- Interfaz Cyber HUD «Rhynus Mode», adaptable y con identidad institucional RIW.
+- Procesamiento de imagen local en el navegador. La aplicación no envía fotogramas a un servidor.
 
-## Probar localmente
+**Límite actual:** todavía no reconoce rostros ni sonrisas ni coloca la máscara siguiendo puntos faciales. No identifica a personas.
+
+## Ejecutar localmente
+
+Desde la carpeta del proyecto:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Abrir `http://localhost:8000`. Autorizar el permiso de cámara. También funciona al publicarse en HTTPS.
+Abre `http://localhost:8000` y concede acceso a la cámara si quieres probarla. En un Space público, la página funcionará bajo HTTPS.
 
-## Publicación en Hugging Face
+## Código y demostración
 
-1. Crear un Space con SDK **Static HTML**.
-2. Subir `README.md`, `index.html`, `style.css` y `app.js` al repositorio del Space, o conectar el repositorio Git como remoto adicional.
-3. Tras el commit, Hugging Face sirve la aplicación automáticamente.
+- Repositorio principal: https://github.com/rhynocerus/rhynus-cam-lab
+- Demostración en Hugging Face Spaces: pendiente de publicar.
 
-## GitHub y Hugging Face
+GitHub es el origen del código; el Space es el escaparate para probarlo. Se sincronizarán mediante un procedimiento de publicación explícito.
 
-GitHub será el repositorio principal; Hugging Face Spaces será otro remoto Git, no necesariamente una copia automática. Para sincronizar, hacer `git push` a ambos remotos o configurar una acción de GitHub más adelante.
+## Licencia y atribución
+
+**Código fuente: GNU General Public License, versión 3.0 (GPL-3.0).** Los avisos de copyright y de licencia deben conservarse según sus condiciones. La GPL permite estudiar, modificar y redistribuir el software, también comercialmente, cumpliendo sus términos; no obliga a enviar las modificaciones a este repositorio.
+
+Texto oficial: https://www.gnu.org/licenses/gpl-3.0.html
+
+**Importante para completar la formalización:** añadir el archivo `LICENSE` con el texto completo de GPL-3.0 al repositorio antes del lanzamiento final. La identificación `license: gpl-3.0` de la cabecera informa a Hugging Face de la licencia elegida, pero no sustituye ese archivo.
+
+**Identidad corporativa y material gráfico:** los nombres, emblemas y logotipos institucionales de RHYNUS Interactive Works, incluido `assets/branding/RIW_Logo_Principal_Horizontal_Transparente_v1.png`, no se ofrecen como marcas de libre uso ni conceden permiso de suplantación o patrocinio. Su uso como marca requiere autorización de su titular. Las condiciones específicas de reproducción del material gráfico se documentarán por separado en `TRADEMARKS.md` antes de reutilizarlo fuera de la demostración original.
+
+No se declara por ahora que todas las imágenes y los recursos gráficos estén bajo CC BY-SA 4.0: cualquier licencia específica de fotografía o ilustración se indicará archivo por archivo, una vez revisada su titularidad.
+
+## Colaboraciones
+
+¡Se aceptan propuestas de mejora! Para contribuir:
+
+1. Abre un **Issue** describiendo el cambio o problema, cuando proceda.
+2. Crea un fork y una rama dedicada a una sola mejora.
+3. Comprueba que la cámara y los controles siguen funcionando.
+4. Envía un **Pull Request** con explicación y pruebas.
+
+Los PR pasan por revisión del mantenedor antes de incorporarse. La posibilidad de crear forks viene de la licencia; no es obligatorio que otras personas presenten sus cambios como PR. Prepararemos un `CONTRIBUTING.md` con instrucciones más detalladas.
 
 ## Privacidad
 
-Ninguna imagen sale del navegador. No guardamos ni enviamos fotogramas. La cámara se detiene al pulsar **Detener** o al salir de la página. El permiso de cámara lo controla el navegador.
+La cámara requiere consentimiento explícito en el navegador. Esta versión no almacena ni transmite vídeos o fotografías; analiza fotogramas localmente y libera la cámara al pulsar **Detener**. El usuario puede retirar el permiso desde los controles del navegador.
 
-## Próxima etapa
+## Hoja de ruta
 
-Seguimiento de rostro y detección de expresión/sonrisa mediante un modelo que se ejecute en el navegador, tras revisar licencias, rendimiento y privacidad.
+- **v0.1.1:** visor Cyber HUD, movimiento y rinoceronte 2D experimental, validado localmente.
+- **Publicación:** repositorio GitHub y demostración Static Space.
+- **v0.2:** seguimiento facial y detección de sonrisas con herramientas ejecutadas en navegador, sujetos a revisión de licencias, accesibilidad y rendimiento.
 
-Licencia: MIT (añadir archivo LICENSE al publicar si se elige esta licencia).
+Consulta `ROADMAP.md` y `CHECKLIST.md` para el estado de cada fase.
+
+© 2026 RHYNUS Interactive Works. Identidad corporativa RIW.
