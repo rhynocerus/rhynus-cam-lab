@@ -1,0 +1,22 @@
+# Archivos del sistema y editor
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.vscode/
+
+# Dependencias y temporales
+node_modules/
+dist/
+.cache/
+__pycache__/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+
+# Copias de seguridad
+*.bak
+*.tar.gz
+*.zip
