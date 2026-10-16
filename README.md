@@ -7,7 +7,7 @@ sdk: static
 app_file: index.html
 license: gpl-3.0
 pinned: false
-short_description: Laboratorio de cámara, detección de movimiento y máscara de rinoceronte con procesamiento local.
+short_description: Laboratorio de cámara y movimiento RIW
 ---
 
 # RHYNUS CAM LAB 🦏
@@ -38,7 +38,7 @@ Abre `http://localhost:8000` y concede acceso a la cámara si quieres probarla. 
 ## Código y demostración
 
 - Repositorio principal: https://github.com/rhynocerus/rhynus-cam-lab
-- Demostración en Hugging Face Spaces: pendiente de publicar.
+- Demostración pública: https://huggingface.co/spaces/rhynus/rhynus-cam-lab
 
 GitHub es el origen del código; el Space es el escaparate para probarlo. Se sincronizarán mediante un procedimiento de publicación explícito.
 
@@ -48,9 +48,9 @@ GitHub es el origen del código; el Space es el escaparate para probarlo. Se sin
 
 Texto oficial: https://www.gnu.org/licenses/gpl-3.0.html
 
-**Importante para completar la formalización:** añadir el archivo `LICENSE` con el texto completo de GPL-3.0 al repositorio antes del lanzamiento final. La identificación `license: gpl-3.0` de la cabecera informa a Hugging Face de la licencia elegida, pero no sustituye ese archivo.
+El texto íntegro de GNU GPL v3 se encuentra en `LICENSE`. El identificador `license: gpl-3.0` de esta cabecera declara la licencia ante Hugging Face.
 
-**Identidad corporativa y material gráfico:** los nombres, emblemas y logotipos institucionales de RHYNUS Interactive Works, incluido `assets/branding/RIW_Logo_Principal_Horizontal_Transparente_v1.png`, no se ofrecen como marcas de libre uso ni conceden permiso de suplantación o patrocinio. Su uso como marca requiere autorización de su titular. Las condiciones específicas de reproducción del material gráfico se documentarán por separado en `TRADEMARKS.md` antes de reutilizarlo fuera de la demostración original.
+**Identidad corporativa y material gráfico:** los nombres, emblemas y logotipos institucionales de RHYNUS Interactive Works, incluido `assets/branding/RIW_Logo_Principal_Horizontal_Transparente_v1.png`, no se ofrecen como marcas de libre uso ni conceden permiso de suplantación o patrocinio. Su uso como marca requiere autorización de su titular. Las condiciones específicas de la identidad institucional se explican en `TRADEMARKS.md`.
 
 No se declara por ahora que todas las imágenes y los recursos gráficos estén bajo CC BY-SA 4.0: cualquier licencia específica de fotografía o ilustración se indicará archivo por archivo, una vez revisada su titularidad.
 
@@ -63,7 +63,7 @@ No se declara por ahora que todas las imágenes y los recursos gráficos estén 
 3. Comprueba que la cámara y los controles siguen funcionando.
 4. Envía un **Pull Request** con explicación y pruebas.
 
-Los PR pasan por revisión del mantenedor antes de incorporarse. La posibilidad de crear forks viene de la licencia; no es obligatorio que otras personas presenten sus cambios como PR. Prepararemos un `CONTRIBUTING.md` con instrucciones más detalladas.
+Los PR pasan por revisión del mantenedor antes de incorporarse. La posibilidad de crear forks viene de la licencia; no es obligatorio que otras personas presenten sus cambios como PR. Consulta `CONTRIBUTING.md` para las instrucciones detalladas.
 
 ## Privacidad
 
@@ -71,10 +71,17 @@ La cámara requiere consentimiento explícito en el navegador. Esta versión no 
 
 ## Hoja de ruta
 
-- **v0.1.1:** visor Cyber HUD, movimiento y rinoceronte 2D experimental, validado localmente.
-- **Publicación:** repositorio GitHub y demostración Static Space.
+- **v0.1.1:** visor Cyber HUD, movimiento y rinoceronte 2D experimental, validado en escritorio y móvil, con publicación pública comprobada.
+- **Publicación:** GitHub y Static Space de Hugging Face, completada el 16 de octubre de 2026.
 - **v0.2:** seguimiento facial y detección de sonrisas con herramientas ejecutadas en navegador, sujetos a revisión de licencias, accesibilidad y rendimiento.
 
 Consulta `ROADMAP.md` y `CHECKLIST.md` para el estado de cada fase.
 
 © 2026 RHYNUS Interactive Works. Identidad corporativa RIW.
+
+## Validación del lanzamiento (16 de octubre de 2026)
+
+- Validación funcional/visual local: 8/8 comprobaciones confirmadas.
+- Validación móvil pública: 6/6 comprobaciones confirmadas por el usuario (interfaz adaptable, logo, permisos de cámara, indicador de movimiento, máscara y controles táctiles).
+- Demo: https://huggingface.co/spaces/rhynus/rhynus-cam-lab
+- Estado: **v0.1.1 cerrada**. Mejoras de seguimiento facial y expresiones permanecen en el backlog v0.2.
